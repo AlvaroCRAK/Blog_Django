@@ -1,0 +1,15 @@
+blog list
+Blog_list <a href="{% url 'home' %}"> volver </a>
+<br>
+<p> | </p>
+<br>
+<a href="{% url 'blog:create' %}">Create</a>
+<br>
+<br>
+list
+<br>
+{%for post in posts%}
+<a href="{% url 'blog:detail' post.id %}">{{post.title}}</a>
+<a href="{% url 'blog:update' post.id %}">Update</a>
+<a href="{% url 'blog:delete' post.id %}">Delete</a>
+{%endfor%}
