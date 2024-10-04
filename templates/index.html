@@ -1,1 +1,21 @@
-hola, visita mi <a href="{% url 'blog:home' %}">blog</a>
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    {% tailwind_css %}
+
+    <title> Sistema de Incidencias y Soporte </title>
+    <br>
+    <p>Esta en una increible pagina web </p>
+    <br>
+    hola, visita mi <a href="{% url 'blog:home' %}">blog</a>
+
+  </body>
+</html>
